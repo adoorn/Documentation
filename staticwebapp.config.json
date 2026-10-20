@@ -1,0 +1,30 @@
+{
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html",
+      "statusCode": 404
+    }
+  },
+  "routes": [
+    {
+      "route": "/itOperations/Infrastructure/TelnetServerInstallation.html",
+      "redirect": "/itOperations/Infrastructure/TelnetProxy/TelnetServerInstallation.html",
+      "statusCode": 301
+    },
+    {
+      "route": "/itOperations/Infrastructure/RefreshTelnetProxySecret.html",
+      "redirect": "/itOperations/Infrastructure/TelnetProxy/RefreshTelnetProxySecrets.html",
+      "statusCode": 301
+    },
+    {
+      "route": "/appBase/BIDataSources.html",
+      "redirect": "/appBase/AnalyticsEssentials.html",
+      "statusCode": 301
+    },
+    {
+      "route": "/appBase/Scanning.html",
+      "redirect": "/appBase/Scanning/Overview.html",
+      "statusCode": 301
+    }
+  ]
+}

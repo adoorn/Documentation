@@ -1,0 +1,27 @@
+- name: Generic
+  href: appBase/
+  homepage: appBase/base.md
+- name: Warehousing
+  href: appWMS/
+  homepage: appWMS/WMS.md
+- name: Transportation
+  href: appTMS/
+  homepage: appTMS/TMS.md
+- name: Forwarding
+  href: appFMS/
+  homepage: appFMS/FMS.md
+- name: Customs
+  href: appCustoms/
+  homepage: appCustoms/Customs.md
+- name: Integrations
+  href: appIntegration/
+  homepage: appIntegration/GetStarted.md
+- name: Support
+  href: appSupport/
+  homepage: appSupport/Support.md
+- name: IT Operations
+  href: itOperations/
+  homepage: itOperations/overview.md
+- name: Lifecycle
+  href: appLifecycle/
+  homepage: appLifecycle/Lifecycle.md

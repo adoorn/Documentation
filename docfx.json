@@ -1,0 +1,45 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/media/**",
+          "media/**",
+          "favicon.ico",
+          "logo.svg",
+          "staticwebapp.config.json"
+        ]
+      }
+    ],
+    "output": "../_site",
+    "template": [
+      "default",
+      "modern",
+      "./template"
+    ],
+    "globalMetadata": {
+      "_appTitle": "Learn 3PL Dynamics",
+      "_enableSearch": true,
+      "pdf": false,
+      "_disableContribution": false,
+      "_appLogoPath": "logo.svg"
+    },
+    "markdownEngineProperties": {
+      "alerts": {
+        "TIP": "alert alert-success",
+        "IMPORTANT": "alert alert-primary",
+        "TODO": "alert alert-secondary"
+      }
+    }
+  }
+}

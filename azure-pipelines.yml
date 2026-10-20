@@ -1,0 +1,24 @@
+pool:
+  name: 'BP-BC-AGENTS'
+
+name: $(BuildID)
+
+steps:
+- task: PowerShell@2
+  displayName: 'Build script'
+  condition: succeededOrFailed()
+  inputs:
+    filePath: '$(Build.SourcesDirectory)\scripts\BuildScript.ps1'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/_site'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

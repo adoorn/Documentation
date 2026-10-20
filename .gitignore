@@ -1,0 +1,15 @@
+*.app
+.vscode/
+**/.vscode/
+**/.snapshots
+*.g.xlf
+launch.json
+rad.json
+settings.json
+*_Log.json
+*.code-workspace
+_site/
+obj/
+Workspaces/
+_exported_templates
+CLAUDE.md
